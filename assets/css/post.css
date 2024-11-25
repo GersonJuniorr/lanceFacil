@@ -1,0 +1,376 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--bs-post);
+  border: 1px solid var(--bs-border);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.post-header,
+.post-image-container,
+.post-footer {
+  width: 100%;
+}
+
+.post-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 3px solid #fff;
+  border-color: var(--bs-btn);
+}
+
+.header-info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.post-date {
+  font-size: 0.9em;
+  color: var(--bs-date);
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.header-info h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--bs-textp);
+}
+
+.header-info p {
+  font-size: 12px;
+  color: var(--bs-textp);
+  margin: 5px 0 0;
+  overflow-wrap: break-word;
+}
+
+.post-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-image-container img {
+  display: block;
+  width: 100%;
+  max-width: 100% !important;
+  height: auto;
+  max-height: auto;
+}
+
+.post-footer {
+  display: flex;
+  padding: 10px 16px;
+  border-top: 1px solid #ddd;
+  justify-content: left;
+}
+
+
+.post-description {
+  width: 95%;
+  margin-left: 10px;
+  position: relative;
+  color: var(--bs-textp);
+}
+
+.description-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  transition: max-height 0.3s ease;
+  text-align: left;
+  text-align-last: left;
+}
+.description-text a{
+  font-weight: bold;
+  text-decoration: none;
+  /* color: var(--bs-textp); */
+}
+
+.description-text.expanded {
+  -webkit-line-clamp: unset;
+  text-align: justify;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #929292;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 5px;
+  display: block;
+}
+
+.action-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--bs-textp);
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.like-count {
+  color: var(--bs-textp);
+}
+
+.action-btn ion-icon {
+  font-size: 20px;
+}
+
+ion-icon[name="heart"] {
+  color: red;
+}
+
+ion-icon[name="heart-outline"] {
+  color: var(--bs-textp);
+}
+
+.nav-link .icon ion-icon {
+  font-size: 50px;
+}
+
+.animated {
+  animation: pop 0.3s ease forwards;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100% !important;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+.form-group {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group textarea,
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.submit-btn {
+  background-color: var(--bs-btn);
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.btn-buscar {
+  background-color: var(--bs-btn);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  width: 100%;
+  height: 100% !important;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.submit-btn:hover {
+  background-color: var(--bs-hover);
+}
+
+.submit-btn2 {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.main-color {
+  background-color: #e9e9e9;
+}
+
+.none {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px;
+  background: #fafafa;
+  border: 2px dashed #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.custom-file-upload .upload-icon {
+  font-size: 36px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.custom-file-upload img {
+  image-resolution: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.custom-file-upload {
+  padding: 0;
+  margin: 0 auto;
+  background: none;
+  border: none;
+}
+
+/* Estilo personalizado para o checkbox */
+.form-check-input {
+  width: 30px;
+  height: 30px;
+  accent-color: #007bff; /* Muda a cor do checkbox */
+}
+
+.form-check-label {
+  cursor: pointer;
+  margin-bottom: 0 !important;
+}
+
+.heart-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: red;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.5s ease;
+  pointer-events: none; /* Para não interferir nos cliques */
+}
+
+.heart-animation.show {
+  opacity: 0.3;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 30%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Altera de auto para hidden */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 90%; /* Ajusta o tamanho máximo da imagem */
+  transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+/* Fechar botão */
+.close {
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+#zoomable-image {
+  width: 100%;
+  max-height: 90vh; /* Limita a altura da imagem */
+  transform-origin: center center; /* Zoom será centrado na imagem */
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Lance Fácil",
+  "short_name": "Lance Fácil",
+  "start_url": "index.php",
+  "display": "standalone",
+  "scope": "/",
+  "description": "Leilão por uma rede social.",
+  "background_color": "#4a73e8",
+  "theme_color": "#4a73e8",
+  "orientation": "portrait",
+  "manifestVersion": "1.0.0",
+  "version": "1.0.0",
+  "developer": {
+    "name": "Gabriel Florian",
+    "websiteUrl": ""
+  },
+  "icons": [
+    {
+      "src": "assets/img/icon/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ]
+}
